@@ -1,0 +1,14 @@
+com\dummysite\framework\WaitFactory.class
+com\dummysite\html\ComponentIds.class
+com\dummysite\pages\HomePage.class
+com\dummysite\pages\RegistrationPage.class
+com\dummysite\framework\BasePage.class
+com\dummysite\framework\WebDriverManager.class
+com\functionaltests\DummyTest.class
+com\dummysite\config\BrowserConfig.class
+com\dummysite\config\AppConfig.class
+com\dummysite\framework\BasePage$1.class
+com\dummysite\framework\BasePage$SelectFactory.class
+com\dummysite\html\ComponentIds$HOMEPAGE.class
+TestRunner.class
+com\dummysite\test\TestBase.class

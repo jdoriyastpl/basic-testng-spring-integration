@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:annotation-config />
+	<context:component-scan	base-package="com.dummysite.framework"/>
+	<context:component-scan	base-package="com.dummy.site.config"/>
+	<!-- <bean id="uiActionHelper" class="com.dummy.site.qa.UiActionHelper"></bean>
+	<bean id="webDriverFactory" class="com.dummy.site.qa.WebDriverFactory"></bean> -->
+
+	<bean id="allProperties"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="searchSystemEnvironment" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:app.properties</value>
+				<value>classpath:browser.win.properties</value>
+			</list>
+		</property>
+	</bean>
+
+
+</beans>
